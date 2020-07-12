@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="company {{ page.container-class }}">
+  <div class="company__banner-wrapper">
+    <div class="company__banner">
+      <img src="/assets/images/{{ page.logo }}">
+
+      <span>{{ page.tagline }}</span>
+    </div>
+  </div>
+  <div class="company__content">
+    <h1>{{ page.name }}</h1>
+    <h2>{{ page.born }} - {{ page.death }}</h2>
+
+    {{ content }}
+
+    <div class="company__section company__contact">
+      <h2>Contact Info</h2>
+      <p>Want to contact {{ page.name }}? Email <a href="mailto:{{ page.contact }}">{{ page.contact }}</a></p>
+    </div>
+  </div>
+</div>

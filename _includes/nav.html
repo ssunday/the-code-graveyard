@@ -1,0 +1,8 @@
+<nav>
+  <a href="/" class="nav__title">⚰️ The Code Graveyard</a>
+
+  {% for company in site.companies %}
+    <a href="{{ company.url }}" class="nav__link">{{ company.name }}</a>
+  {% endfor %}
+  <span class="nav__spacer"></span>
+</nav>

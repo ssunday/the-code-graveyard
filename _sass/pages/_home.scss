@@ -1,0 +1,13 @@
+.home__company-logo {
+  display: flex;
+  height: 5em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+  width: min-content;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

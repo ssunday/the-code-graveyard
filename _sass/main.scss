@@ -1,0 +1,24 @@
+// Settings
+
+@import 'settings/colors';
+@import 'settings/media';
+@import 'settings/sizes';
+@import 'settings/typography';
+
+// Base
+@import 'base/mixins';
+@import 'base/layout';
+@import 'base/typography';
+
+// Components
+
+@import 'components/footer';
+@import 'components/nav';
+
+// Pages
+
+@import 'pages/home';
+
+// Companies
+
+@import 'companies/tsr';

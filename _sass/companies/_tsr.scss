@@ -1,0 +1,8 @@
+.tsr-container {
+  @import 'tsr/variables';
+  @import 'base';
+
+  &.home__company-logo {
+    background-color: $color-header;
+  }
+}

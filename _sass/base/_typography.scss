@@ -1,0 +1,38 @@
+html {
+  font-family: $font-base;
+}
+
+h1, h2, h3 {
+  font-family: $font-heading;
+}
+
+h1 {
+  font-size: $font-size-xxlarge;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  font-size: $font-size-large;
+  font-weight: $font-weight-semibold;
+}
+
+p {
+  font-size: $font-size-normal;
+}
+
+ul {
+  font-size: $font-size-normal;
+}
+
+a {
+  color: $color-blue;
+
+  &:hover {
+    color: darken($color-blue, 20%);
+  }
+}

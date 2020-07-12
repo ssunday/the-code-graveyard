@@ -1,0 +1,108 @@
+---
+layout: company
+container-class: tsr-container
+name: TheSocReports
+title: TheSocReports
+logo: tsr/tsr-logo.png
+image: /assets/images/tsr/tsr-logo.png
+tagline: TheSocReports is a social media growth tool priced for personal brands and small business. (That's 'sosh' as in social.)
+description: Grave for TheSocReports. TheSocReports, or TSR for short, was a social-media focused start-up designed for brands, either personal or business, looking to step-up their social media game.
+born: July 2015
+death: December 2017
+contact: david@klobomedia.com
+---
+
+<div class="company__intro">
+  <p>
+    TheSocReports, or TSR for short, was a social-media focused start-up designed for brands, either personal or business, looking to step-up their social media game. One of their target audiences were realtors.</p>
+  <p>
+    TSR's product, its weekly reports, would give its users insight into their social media presence and insight on how to improve their influence. Followers, retweets, shares, likes, and so on were analyzed in addition to how the user's brand faired against its chosen competitors.
+  </p>
+  <p>
+    The company began in 2015 and its software platform went through a few development iterations, all with the goal of automating as much analysis as possible and making it easier for people to sign-up. The product and its value essentially remained the same throughout, the change was in method of delivery and how the data was collected.
+  </p>
+  <p>
+    Development of the software platform for the product and the product itself froze in 2017 due to the founder and main driver of the company, Carol Fowler, getting an opportunity to return to news management. With Carol occupied with her new job, TheSocReports shut down.
+  </p>
+</div>
+
+<div class="company__section company__copy-wrapper">
+  <h2>TheSocReports in its Own Words...</h2>
+
+  <div class="company__copy">
+    <div class="company__copy-block">
+      <h3>What we do</h3>
+      <p>Chicago-based <a href='https://klobomedia.com'>KloboMedia</a> created TheSocReports to help personal brands - people like real estate agents and television meteorologists - grow influence and gain followers by furnishing highly curated, easy-to-understand social data insights. Each week’s insights build upon the next, not just showing how well clients performed, but what they can do in the coming week to improve - a blend of data science and personal training.</p>
+    </div>
+    <div class="company__copy-block">
+      <h3>How we're different</h3>
+      <p>There are many social media counting services out there. Nearly all are social listening or publishing tools geared toward the big corporate brands, too expensive for the average professional. TheSocReports is unique in that it blends analytics and actionable advice for personal brands, whose professional growth relies on brand awareness, authority and reputation. Everything we present is in the context of your peers and industry.</p>
+    </div>
+    <div class="company__copy-block">
+      <h3>Why it matters</h3>
+      <p>In today's #SocialMedia heavy world, a strong social footprint can help you drive customer leads, salaries, promotions, speaking engagements and other contract terms. It's essential to any marketing plan. But there's a problem. Most professionals have no idea if their activity is making a difference. As we often hear, ‘what’s the ROI?’ Well, you can’t monetize what you don’t measure!</p>
+    </div>
+  </div>
+</div>
+
+<img class="company__image" src="/assets/images/tsr/site-hero.jpg" alt="Website hero video and nav">
+
+<div class="company__section company__product">
+  <h2>The Product</h2>
+
+  <p>
+    The actual application, at surface, might seem pretty simple. It had a sign-up wizard with steps to add competitors, social accounts, general demographic questions, and a payment page. After that, the user would have access to their weekly reports. Its the contents of the reports where the nuance and value laid.
+  </p>
+  <p>
+    These reports had many different ‘lessons’ or 'insights' to them. Each insight (excluding the top/bottom lines) had specific take-aways based on the data from their connected platform that could help the user refine their social media usage.
+  </p>
+
+  <p>Example insights include:</p>
+
+  <ul>
+    <li>Total Posts</li>
+    <li>Top Tweets & Facebook Posts</li>
+    <li>Posts with Hyperlinks, Media, and Mentions</li>
+    <li>Top Ten Followers</li>
+    <li>Day Part: Analyzing post activity vs. follower activity with regards to time of day</li>
+    <li>Curated 'top' and 'bottom' lines with weekly news/tips/flavor</li>
+  </ul>
+
+  <p>To get a feel for what TSR's product and platform was like, there's no better way than by viewing this demo video narrated by the founder Carol Fowler herself!</p>
+
+  <div class="company__video">
+    <iframe src="https://www.youtube.com/embed/HEhx0lOP4g8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="company__section company__stack">
+  <h2>Technical Stack/The Code</h2>
+  <p>
+    The application was built with Ruby on Rails. In its 'final' state it was on Ruby 2.3.1 and Rails 4.2.
+  </p>
+  <p>
+    The app was hosted on Amazon Web Services, using services such as Elastic Beanstalk and RDS. PostgreSQL was used for the database. JSONB columns were used to store the data that was pulled from the social media APIs in addition to the insights themselves.
+  </p>
+  <p>
+    The app's integration with Facebook and Twitter was truly its lifeblood. It would aggregate Tweets using the streaming API, pulling Tweets as they were made. As redundancy in case the stream was interrupted for whatever reason, it would backfill the tweets for the 'cohorts' of the application (cohorts meaning the users and their competitors). Facebook data was pulled every day.
+  </p>
+
+  <p>
+    Using that aggregated data, insights for each user were generated and persisted. Each insight was a snapshot of the data collected and it was editable by TSR admins in case there was a discrepancy with reality.
+  </p>
+</div>
+
+<div class="company__section company__team">
+  <h2>The Team</h2>
+  <div class="company__team-members">
+    <div class="company__team-member">
+      <h3><a href="https://www.linkedin.com/in/carolfowler/">Carol Fowler</a>, Founder & Former CEO</h3>
+    </div>
+    <div class="company__team-member">
+      <h3><a href="https://www.linkedin.com/in/davidklobucar/">David Klobucar</a>, COO</h3>
+    </div>
+    <div class="company__team-member">
+      <h3><a href="https://www.linkedin.com/in/ckbergjans/">Christine Bergjans</a>, CEO at time of ending</h3>
+    </div>
+  </div>
+</div>

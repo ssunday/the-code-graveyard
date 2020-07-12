@@ -1,0 +1,104 @@
+&.company {
+  .company__banner-wrapper {
+    background-color: $color-header;
+    padding: 2em 1em;
+
+    .company__banner {
+      @include content-container;
+
+      span {
+        color: $color-white;
+        display: block;
+        font-size: 1.5em;
+        font-style: italic;
+        margin: 0.5em 0;
+      }
+    }
+  }
+
+  .company__content {
+    @include content-container;
+    padding: 1em;
+  }
+
+  .company__image {
+    @include content-container;
+    display: block;
+    width: 100%;
+  }
+
+  .company__video {
+    padding-top: 50%;
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .company__intro {
+    margin: 0 0 2em 0;
+  }
+
+  .company__section {
+    border: 3px solid;
+    margin: 1em 0;
+    padding: 1em 1em;
+
+    h2 {
+      margin: 0.5em 0;
+    }
+  }
+
+  .company__product {
+    border-color: $color-company-brand;
+  }
+
+  .company__stack {
+    border-color: $color-yellow;
+  }
+
+  .company__copy-wrapper {
+    border-color: $color-green;
+
+    .company__copy {
+      @include flex-row-wrap;
+
+      .company__copy-block {
+        flex: 27%;
+        padding: 0 3em 0 0;
+
+        @media #{$medium-and-down} {
+          flex: 100%;
+        }
+      }
+    }
+  }
+
+  .company__team {
+    border-color: $color-purple;
+  }
+
+  .company__contact {
+    border-color: $color-gray;
+    margin: 1em 0;
+  }
+
+  .company__image-copy-section {
+    @include flex-row-wrap;
+
+    div {
+      flex: 55%;
+    }
+
+    img {
+      flex: 30%;
+    }
+  }
+}

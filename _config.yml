@@ -1,0 +1,30 @@
+title: The Code Graveryard
+description: A graveyard for products, start-ups, and other code bases. A way to memorialize the fallen so they are not left forgotten.
+baseurl: ""
+url: ""
+
+theme: minima
+plugins:
+  - jekyll-seo-tag
+sass:
+  sass_dir: _sass
+
+collections:
+  companies:
+    permalink: /companies/:slug/
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "companies"
+    values:
+      layout: company
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .ruby-version

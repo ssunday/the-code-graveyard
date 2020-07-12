@@ -1,0 +1,10 @@
+@mixin flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin content-container {
+  margin: 0 auto;
+  max-width: $max-width;
+}

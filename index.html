@@ -1,0 +1,31 @@
+---
+layout: default
+title: The Code Graveyard
+permalink: /
+---
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+  <p>
+    Ideas flicker in and out of existence every second. Start-up companies are the same. Ideas roar into life, consume people into the sometimes thankless task of building them out, and then fizzle away unceremoniously. These companies, these ideas, get swept away due to the forces of life—whether it be not enough interest, bad timing, the lives of the people at the helm, or anything else. It happens. It's part of life.
+  </p>
+
+  <p>
+    But what happens <i>after</i>? Specifically, what happens to the carcass of these companies...their <i>codebases</i>? Perhaps they linger in cloud version control systems. Perhaps they don't even linger there...maybe just in hardrives of developers who have long since moved on.
+  </p>
+
+  <p>
+    Whatever fate has befallen them, they remain in our hearts. These failed start-up companies have codebases that gave their makers, the developers, experience, pain, suffering, enjoyment, triumph...as in, all range of emotions. Here in the Code Graveyard, we honor dead products and the technology that was their foundation. Because they should not be left forgotten.
+  </p>
+
+  <h2>Featured Graves</h2>
+
+  <div class="home__company-logos">
+    {% for company in site.companies %}
+      <a class="{{ company.container-class }} home__company-logo " href="{{ company.url | to_relative_url }}" title="{{ company.name }}">
+        <img src="/assets/images/{{ company.logo }}">
+      </a>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,54 @@
+nav {
+  @include flex-row-wrap;
+  overflow: auto;
+
+  .nav__link, .nav__title, .nav__spacer {
+    line-height: 1em;
+    margin: 0;
+    padding: 1.5em 1em;
+  }
+
+  .nav__link, .nav__title {
+    color: $color-white;
+    font-family: $font-heading;
+    font-size: $font-size-large;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+
+  .nav__link {
+    background-color: $color-brand-secondary;
+
+    &:hover {
+      background-color: darken($color-brand-secondary, 5%);
+    }
+
+    @media #{$medium-and-down} {
+      flex: 50%;
+    }
+  }
+
+  .nav__title {
+    background-color: $color-brand-primary;
+
+    @media #{$medium-and-down} {
+      flex: 100%;
+    }
+
+    &:hover {
+      background-color: darken($color-brand-primary, 5%);
+    }
+  }
+
+  .nav__spacer {
+    background-color: $color-brand-tertiary;
+    flex: auto;
+
+    @media #{$medium-and-down} {
+      display: none;
+    }
+  }
+}
