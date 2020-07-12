@@ -6,6 +6,10 @@
     .company__banner {
       @include content-container;
 
+      img {
+        max-width: 100%;
+      }
+
       span {
         color: $color-white;
         display: block;
@@ -19,6 +23,10 @@
   .company__content {
     @include content-container;
     padding: 1em;
+
+    @media #{$small-and-down} {
+      padding: 0.5em;
+    }
   }
 
   .company__image {
