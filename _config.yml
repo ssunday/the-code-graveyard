@@ -1,7 +1,7 @@
 title: The Code Graveryard
 description: A graveyard for products, start-ups, and other code bases. A way to memorialize the fallen so they are not left forgotten.
 baseurl: ""
-url: ""
+url: "https://thecodegraveyard.sasunday.com"
 
 theme: minima
 plugins:
