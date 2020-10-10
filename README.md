@@ -8,7 +8,8 @@ This is a work-in-progress concept.
 
 ## Requirements
 
-- Ruby 2.6.6
+- [Ruby](./.ruby-version)
+- Bundler
 
 ## Setup
 
